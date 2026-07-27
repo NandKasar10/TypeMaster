@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeMaster</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="../static/css/style.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div id="result-page">
+        <div class="container">
+            <div class="card result-card">
+                <h2>Your Result</h2>
+                <h1 id="final-wpm">120 WPM</h1>
+                <div class="stats-grid">
+                    <div>WPM: <span id="result-wpm">120</span></div>
+                    <div>Accuracy: <span id="result-accuracy">98%</span></div>
+                    <div>Correct Chars: <span id="result-correct-chars">150</span></div>
+                    <div>Incorrect Chars: <span id="result-incorrect-chars">3</span></div>
+                    <div>Time Taken: <span id="result-time-taken">60s</span></div>
+                    <div>Total Chars: <span id="result-total-chars">153</span></div>
+                </div>
+                <div class="performance-badge" id="performance-badge">Excellent</div>
+                <div class="result-buttons">
+                    <button class="btn btn-secondary">Retry</button>
+                    <a href="/" class="btn btn-primary">Home</a>
+                    <a href="/typing" class="btn btn-secondary">Try Again</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

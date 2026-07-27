@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeMaster</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="../static/css/style.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <!-- Landing Page -->
+    <header class="landing-header">
+        <div class="container">
+            <div class="logo">TypeMaster</div>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <!-- <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Leaderboard</a></li>
+                    <li><a href="#">Login</a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="container">
+            <h1>Master Your Typing Skills</h1>
+            <p>Improve your speed and accuracy with our intuitive and engaging typing test platform.</p>
+            <div class="hero-buttons">
+                <a href="/typing" class="btn btn-secondary">Start Typing</a>
+                <a href="/about" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <div class="feature-cards">
+                <div class="card feature-card">
+                    <h3>Real-time WPM</h3>
+                    <p>See your words per minute update live.</p>
+                </div>
+                <div class="card feature-card">
+                    <h3>Accuracy Tracking</h3>
+                    <p>Monitor your precision with every keystroke.</p>
+                </div>
+                <div class="card feature-card">
+                    <h3>Instant Results</h3>
+                    <p>Get immediate feedback on your performance.</p>
+                </div>
+                <div class="card feature-card">
+                    <h3>Minimal Interface</h3>
+                    <p>Focus on typing without distractions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="landing-footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://x.com/Nik_Coding10">Twitter</a>
+                <a href="https://github.com/NandKasar10">GitHub</a>
+                <a href="https://www.linkedin.com/in/nand-kumar-kasar-902286311/">Linkedin</a>
+            </div>
+            <p>&copy; Made with Love.</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
